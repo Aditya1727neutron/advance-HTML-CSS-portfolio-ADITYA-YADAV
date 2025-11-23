@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zomato - Basic</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+    body { background-color: #fff; color: #333; }
+
+    header { background-color: #e23744; padding: 15px 40px; display: flex; align-items: center; justify-content: space-between; }
+    header h1 { color: #fff; font-size: 26px; }
+    nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+
+    .hero { background: url('https://b.zmtcdn.com/data/o2_assets/9f54897d4f5e03a1a99e4bb3b07bf4c11683356665.png') no-repeat center/cover; height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; }
+    .hero h2 { font-size: 40px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; }
+
+    .search { margin-top: 20px; }
+    .search input { padding: 12px; width: 300px; border: none; border-radius: 6px; }
+    .search button { padding: 12px 20px; border: none; border-radius: 6px; margin-left: 10px; background-color: #e23744; color: #fff; cursor: pointer; }
+    .search button:hover { background-color: #c72f3a; }
+
+    .container { padding: 40px; max-width: 1100px; margin: auto; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { border: 1px solid #eee; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background: #fff; }
+    .card img { width: 100%; height: 180px; object-fit: cover; }
+    .card h3 { padding: 15px; font-size: 20px; }
+    .card p { padding: 0 15px 15px; color: #666; font-size: 14px; }
+
+    footer { background: #f8f8f8; padding: 20px; text-align: center; font-size: 14px; color: #666; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zomato</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Discover the best food & drinks</h2>
+    <p>Find the best restaurants, cafés and bars in your city</p>
+    <div class="search">
+      <input type="text" placeholder="Search for restaurants...">
+      <button>Search</button>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 style="margin-bottom: 20px;">Popular Restaurants</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://i.pinimg.com/474x/7d/08/6c/7d086cf4b6c8d91988d949fd8d4b6972.jpg" alt="Restaurant 1">
+        <h3>Spice Hub</h3>
+        <p>Delicious North Indian food with rich flavors and spices.</p>
+      </div>
+      <div class="card">
+        <img src="https://thumbs.dreamstime.com/b/creamy-pasta-dish-close-up-dark-background-food-photography-recipe-illustration-357796058.jpg" alt="Restaurant 2">
+        <h3>Pasta Palace</h3>
+        <p>Authentic Italian cuisine with fresh handmade pasta.</p>
+      </div>
+      <div class="card">
+        <img src="https://media.istockphoto.com/id/1498243668/photo/tasty-cheeseburger-with-lettuce-cheddar-cheese-tomato-and-pickles-burger-bun-with-sesame.jpg?s=612x612&w=0&k=20&c=m2fYc-3o7yjL2qUVxxKlGkniKYIw5qh7gaSdagUNSbU=" alt="Restaurant 3">
+        <h3>Burger Spot</h3>
+        <p>Juicy burgers and crispy fries made just for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Zomato Clone | Created for Learning</p>
+  </footer>
+</body>
+</html>
